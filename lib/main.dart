@@ -3,6 +3,10 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+<<<<<<< HEAD
+=======
+
+>>>>>>> f758f8a38ce4f986d03bef85c1c388a5b44d8726
 
 void main() {
   runApp(const FlowerRecognitionApp());
@@ -29,6 +33,7 @@ class FlowerRecognitionHome extends StatefulWidget {
 
 class _FlowerRecognitionHomeState extends State<FlowerRecognitionHome> {
   // ignore: unused_field
+<<<<<<< HEAD
   final picker = ImagePicker();
   late PickedFile _image = PickedFile('');
 
@@ -42,6 +47,9 @@ class _FlowerRecognitionHomeState extends State<FlowerRecognitionHome> {
   Future<void> getImageFromGallery() async {
     
   }
+=======
+
+>>>>>>> f758f8a38ce4f986d03bef85c1c388a5b44d8726
 
   @override
 Widget build(BuildContext context) {
@@ -50,6 +58,7 @@ Widget build(BuildContext context) {
       title: const Text('PlanFI'),
       backgroundColor: Colors.green,
     ),
+<<<<<<< HEAD
     body: Center(
       // ignore: unnecessary_null_comparison
       child: _image == null
@@ -65,5 +74,14 @@ Widget build(BuildContext context) {
 }
 
 }
+=======
+    ),
+}
+
+}
+
+
+
+>>>>>>> f758f8a38ce4f986d03bef85c1c388a5b44d8726
 
 
