@@ -20,6 +20,8 @@ Con TensorFlow nosotros entrenamos nuestra ia la cual nos brinda un archivo .tfl
 <img src='Image/tensorflow-lite-logo-social.png' width='440'>
 
 En la foto que vemos en la parte de abajo podemos apreciar un poco del como se está viendo nuestra app, en la cual el usuario toma una foto o también tendrá la opción de subir una de su galería y una vez que mande el input el output que recibirá el usuario será la respuesta del nombre de la planta.
+
+
 <img src='Image/Pantalla1.jpeg' width='340'>
 
 
