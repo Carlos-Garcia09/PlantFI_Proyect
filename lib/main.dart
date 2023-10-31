@@ -97,6 +97,33 @@ class _FlowerRecognitionHomeState extends State<FlowerRecognitionHome> {
   }
 }
 
+void showInferenceDialog(String flowerLabel) {
+  showDialog(
+    context: _getContext(),
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: const Text('Resultados de la detección'),
+        content: SingleChildScrollView(
+          child: ListBody(
+            children: <Widget>[
+              Text('La flor detectada es: $flowerLabel'), // Ajusta según tu lógica de detección
+              // Puedes agregar más detalles aquí si es necesario
+            ],
+          ),
+        ),
+        actions: <Widget>[
+          TextButton(
+            child: const Text('Aceptar'),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+          ),
+        ],
+      );
+    },
+  );
+}
+
 BuildContext _getContext() {
   BuildContext? context;
   return context!;
