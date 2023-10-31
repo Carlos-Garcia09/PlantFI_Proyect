@@ -3,9 +3,13 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+<<<<<<< HEAD
 import 'package:tflite_flutter/tflite_flutter.dart' as tfl;
 
 import 'package:tflite_flutter_helper_plus/tflite_flutter_helper_plus.dart';
+=======
+
+>>>>>>> 2c6b2c2bf6b16f90b45d880239ac6e9c3d2bdfee
 
 void main() {
   runApp(const FlowerRecognitionApp());
@@ -32,9 +36,13 @@ class FlowerRecognitionHome extends StatefulWidget {
 
 class _FlowerRecognitionHomeState extends State<FlowerRecognitionHome> {
   // ignore: unused_field
+<<<<<<< HEAD
   late tfl.Interpreter _interpreter;
   // ignore: unused_field
   List<String> _labels = [];
+=======
+
+>>>>>>> 2c6b2c2bf6b16f90b45d880239ac6e9c3d2bdfee
   final picker = ImagePicker();
   late PickedFile _image = PickedFile('');
 
@@ -54,15 +62,31 @@ class _FlowerRecognitionHomeState extends State<FlowerRecognitionHome> {
   }
 
   Future<void> getImageFromGallery() async {
+<<<<<<< HEAD
+=======
+    Future<void> getImageFromGallery() async {
+>>>>>>> 2c6b2c2bf6b16f90b45d880239ac6e9c3d2bdfee
     var image = await picker.pickImage(source: ImageSource.gallery);
     setState(() {
       if (image != null) {
         _image = PickedFile(image.path);
         // Aquí llamamos a la función de inferencia con la imagen seleccionada.
+<<<<<<< HEAD
         performInference(_image);
       }
     });
   }
+=======
+        
+      }
+    });
+  }
+    
+  }
+
+
+
+>>>>>>> 2c6b2c2bf6b16f90b45d880239ac6e9c3d2bdfee
 
   @override
 Widget build(BuildContext context) {
@@ -86,5 +110,17 @@ Widget build(BuildContext context) {
 }
 
 }
+<<<<<<< HEAD
+=======
+
+    ),
+}
+
+}
+
+
+
+
+>>>>>>> 2c6b2c2bf6b16f90b45d880239ac6e9c3d2bdfee
 
 
